@@ -15,10 +15,11 @@ public class LoginDetails {
 	WebElement confirmed_password;
 	@FindBy(xpath="//*[@id=\"login-button\"]")
 	WebElement login_button;
-	@FindBy(xpath="//*[@id=\"login-modal-button\"]/div/i")
-	WebElement icon;
-	@FindBy(xpath="//*[@id=\"login-modal-button\"]/div/div/ul/a[5]/li")
-	WebElement log_out;
+	
+	//@FindBy(xpath="//*[@id=\"login-modal-button\"]/div/i")
+	//WebElement icon;
+	//@FindBy(xpath="//*[@id=\"login-modal-button\"]/div/div/ul/a[5]/li")
+	//WebElement log_out;
 	
 	
 	public LoginDetails(WebDriver driver) { //parameter
@@ -30,7 +31,8 @@ public class LoginDetails {
 		registered_email.sendKeys("prema63kumari@gmail.com");
 		confirmed_password.sendKeys("k1lle6p@$ha");
 		login_button.click();
-		icon.click();
-		log_out.click();
+		
+		//icon.click();
+		//log_out.click();
 	}
 }
